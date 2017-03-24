@@ -13,6 +13,7 @@ TBD
   * install ember-cli-sass, used in app.scss  
   * install bootstrap-sass
   * install emberfire
+  * install normalize.css
 
 ### **2.  Specs**  
 
@@ -81,6 +82,7 @@ You will need the following things properly installed on your computer.
 * `ember install ember-cli-sass`
 * `ember g ember-bootstrap`
 * `ember install emberfire`
+* `ember install ember-normalize`
 
 ## Running / Development
 

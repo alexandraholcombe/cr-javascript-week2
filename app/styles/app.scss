@@ -1,9 +1,12 @@
+@import "normalize";
 @import "ember-bootstrap/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Londrina+Solid');
 
+$notWhite: #f4f5f8;
 $navy: #193036;
 $medGreen: #1d9000;
 $brtGreen: #92d819;
+$bsGray: #333333;
 
 $Londrina: "Londrina Solid", sans-serif;
 
@@ -13,7 +16,8 @@ body {
 
 /* CONTAINER */
 .container {
-  background-color: white;
+  background-color: $notWhite;
+  max-width: 970px;
 }
 
 /* HEADER*/
@@ -34,6 +38,10 @@ body {
     z-index: 10;
     width: 460px;
     text-shadow: 3px 3px $brtGreen;
+    color: $bsGray;
+    &:hover {
+      color: $medGreen;
+    }
   }
   img {
     display: inline-block;
