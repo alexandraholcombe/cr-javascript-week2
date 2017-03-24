@@ -1,12 +1,13 @@
 @import "normalize";
 @import "ember-bootstrap/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Londrina+Solid|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid|Open+Sans:400,800');
 
 $notWhite: #f4f5f8;
 $navy: #193036;
 $medGreen: #1d9000;
 $brtGreen: #92d819;
 $bsGray: #333333;
+$ltGreen: #d8e39a;
 
 $accentFont: "Londrina Solid", sans-serif;
 $bodyFont: "Open Sans", "Arial", sans-serif;
@@ -62,16 +63,13 @@ body {
   margin: 0 auto;
   font-size: 22px;
   text-transform: lowercase;
+  margin-bottom: 30px;
   &:hover {
     background-color: $medGreen;
     border-color: $medGreen;
     color: $bsGray;
     text-decoration: none !important;
     outline-color: none;
-  }
-  a:hover, a:visited, a:focus, a:active {
-    text-decoration: none !important;
-    border-width: 0;
   }
 }
 
@@ -81,5 +79,41 @@ button, .btn, .btn-primary, a {
   &:hover, &:visited, &:focus, &:active {
     text-decoration: none !important;
     border-width: 0;
+  }
+  span {
+    margin-left: 10px;
+  }
+}
+
+/* QUESTION */
+
+.question-tile {
+  background-color: white;
+  padding: 20px 30px;
+  padding-top: 15px;
+  margin: 20px;
+  border: 5px solid $medGreen;
+  display: flex;
+  align-items: center;
+  .icon-container {
+    color: $navy;
+    float: left;
+    display: flex;
+    width: 10%;
+    height: 100%;
+    font-size: 70px;
+  }
+  .question-container {
+    padding-left: 20px;
+  }
+  a {
+    color: $navy;
+    font-weight: 800;
+    &:hover {
+      color: $medGreen;
+    }
+  }
+  p {
+    margin-left: 30px;
   }
 }

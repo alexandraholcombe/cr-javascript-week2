@@ -1,4 +1,9 @@
 <div class="question-tile">
-  <h2>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</h2>
-  <p>Author: <span class="author-name">{{question.author}}</span></p>
+  <div class="icon-container">
+    <i class="glyphicon glyphicon-user"></i>
+  </div>
+  <div class="question-container">
+    <h2>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</h2>
+    <p>Asked by <span class="author-name">{{question.author}}</span></p>
+  </div>
 </div>

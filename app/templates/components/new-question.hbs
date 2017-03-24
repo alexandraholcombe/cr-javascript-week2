@@ -1,22 +1,22 @@
-{{#bs-button type="primary btn-lg" icon="glyphicon glyphicon-pencil" onClick=(action 'questionFormShow') id="ask-question"}}Ask a Question{{/bs-button}}
+{{#bs-button type="primary btn-lg" icon="glyphicon glyphicon-comment" onClick=(action 'questionFormShow') id="ask-question"}}<span>Ask a Question</span>{{/bs-button}}
 {{#if addNewQuestion}}
   {{#bs-modal as |modal|}}
     {{#modal.header}}
-    <h3 class="modal-title">Ask a question</h3><i class="glyphicon glyphicon-pencil"></i>
+    <h3 class="modal-title">Ask a question</h3>
     {{/modal.header}}
     {{#modal.body}}
       <form>
-        <div class="form-group">
-          <label for="question">Title</label>
-          {{input class="form-control" value=question id="question" placeholder="Why do dogs bark at the UPS truck?" required=true}}
-        </div>
         <div class="form-group">
           <label for="author">Your Name</label>
           {{input class="form-control" value=author id="author" placeholder="Dog Person" required=true}}
         </div>
         <div class="form-group">
+          <label for="question">Title</label>
+          {{input class="form-control" value=question id="question" placeholder="Why do dogs bark at the UPS truck?" required=true}}
+        </div>
+        <div class="form-group">
           <label for="content">Details</label>
-          {{input class="form-control" value=content id="content" placeholder="Explain your question."}}
+          {{textarea class="form-control" value=content id="content" placeholder="Explain your question"}}
         </div>
         <div class="form-group">
           <label for="notes">Notes</label>
