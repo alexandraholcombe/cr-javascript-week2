@@ -16,6 +16,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyAca7XqmK6OhVcdIi_d-70i8dC990FCre4",
+      authDomain: "ask-a-dog.firebaseapp.com",
+      databaseURL: "https://ask-a-dog.firebaseio.com",
+      storageBucket: "ask-a-dog.appspot.com",
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
