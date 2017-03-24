@@ -5,6 +5,6 @@
 {{new-answer saveAnswer="saveAnswer" question=model}}
 
 <h3>Answers</h3>
-{{#each question.answers as |answer|}}
-  {{answer-tile answer=answer}}
+{{#each model.answers as |thisAnswer|}}
+  {{answer-tile thisAnswer=thisAnswer}}
 {{/each}}
