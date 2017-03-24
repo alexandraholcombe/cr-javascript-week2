@@ -11,6 +11,7 @@ TBD
 **1.  Configuration/Dependencies**  
   * install ember-bootstrap, used in all templates & components
   * install ember-cli-sass, used in app.scss  
+  * install bootstrap-sass
 
 **2.  Specs**  
   **The user can create a question with author and additional notes.**  
@@ -71,6 +72,9 @@ You will need the following things properly installed on your computer.
 * `cd cr-javascript-week2`
 * `npm install`
 * `bower install`
+* `ember install ember-bootstrap`
+* `ember install ember-cli-sass`
+* `ember g ember-bootstrap`
 
 ## Running / Development
 
