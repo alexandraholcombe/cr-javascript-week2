@@ -6,3 +6,40 @@ $medGreen: #1d9000;
 $brtGreen: #92d819;
 
 $Londrina: "Londrina Solid", sans-serif;
+
+body {
+  background-color: $navy;
+}
+
+/* CONTAINER */
+.container {
+  background-color: white;
+}
+
+/* HEADER*/
+.site-header {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 260px + 360px;
+  height: 260px;
+  h1 {
+    display: inline-block;
+    font-size: 100px;
+    font-family: $Londrina;
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+    z-index: 10;
+    width: 460px;
+    text-shadow: 3px 3px $brtGreen;
+  }
+  img {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
