@@ -1,4 +1,4 @@
-{{#bs-button type="primary" icon="glyphicon glyphicon-pencil" onClick=(action 'questionFormShow')}}Ask a Question{{/bs-button}}
+{{#bs-button type="primary btn-lg" icon="glyphicon glyphicon-pencil" onClick=(action 'questionFormShow') id="ask-question"}}Ask a Question{{/bs-button}}
 {{#if addNewQuestion}}
   {{#bs-modal as |modal|}}
     {{#modal.header}}

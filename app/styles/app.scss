@@ -1,6 +1,6 @@
 @import "normalize";
 @import "ember-bootstrap/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Londrina+Solid');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid|Open+Sans');
 
 $notWhite: #f4f5f8;
 $navy: #193036;
@@ -8,10 +8,13 @@ $medGreen: #1d9000;
 $brtGreen: #92d819;
 $bsGray: #333333;
 
-$Londrina: "Londrina Solid", sans-serif;
+$accentFont: "Londrina Solid", sans-serif;
+$bodyFont: "Open Sans", "Arial", sans-serif;
 
 body {
   background-color: $navy;
+  font-family: $bodyFont;
+  font-size: 22px;
 }
 
 /* CONTAINER */
@@ -31,7 +34,7 @@ body {
   h1 {
     display: inline-block;
     font-size: 100px;
-    font-family: $Londrina;
+    font-family: $accentFont;
     position: absolute;
     bottom: 20px;
     left: 150px;
@@ -49,5 +52,34 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+  }
+}
+
+#ask-question {
+  background-color: $navy;
+  width: 260px + 360px;
+  display: block;
+  margin: 0 auto;
+  font-size: 22px;
+  text-transform: lowercase;
+  &:hover {
+    background-color: $medGreen;
+    border-color: $medGreen;
+    color: $bsGray;
+    text-decoration: none !important;
+    outline-color: none;
+  }
+  a:hover, a:visited, a:focus, a:active {
+    text-decoration: none !important;
+    border-width: 0;
+  }
+}
+
+button, .btn, .btn-primary, a {
+  text-decoration: none !important;
+  border-width: 0;
+  &:hover, &:visited, &:focus, &:active {
+    text-decoration: none !important;
+    border-width: 0;
   }
 }
