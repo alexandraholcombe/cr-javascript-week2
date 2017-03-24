@@ -13,5 +13,15 @@
     "question": "What's your favorite toy?",
     "content": "Hey dogs, what's your favorite toy?  I'm buying a gift for my #1 doggo and need ideas!",
     "notes": "She already has 14 tennis balls and a kong"
-  }]
+  }],
+  "answers": [{
+    "author": "Frankie",
+    "answer": "I do da fing.  Wif da toyz."
+    }, {
+    "author": "Charlie Bear",
+    "answer": "I love hugs, they are my most favorite thing in the world!"
+    }, {
+      "author": "Princess Izzy Bella",
+      "answer": "I just like to bark sometimes because it is fun.  I don't really think it's a problem, you know?  I just barka-barka-barka-barka.  Pet me."
+      }]
 }
