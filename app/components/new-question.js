@@ -15,6 +15,8 @@ export default Ember.Component.extend({
         notes: this.get('notes')
       };
 
+      console.log(params);
+
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);
     }
