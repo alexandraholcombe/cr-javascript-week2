@@ -8,49 +8,54 @@
 TBD
 
 ## Planning
-**1.  Configuration/Dependencies**  
+### **1.  Configuration/Dependencies**  
   * install ember-bootstrap, used in all templates & components
   * install ember-cli-sass, used in app.scss  
   * install bootstrap-sass
+  * install emberfire
 
-**2.  Specs**  
+### **2.  Specs**  
+
   **The user can create a question with author and additional notes.**  
-    * Example Input: New question form: "Who's a good boy?"
-    * Example Output: Question added to top of list on main page  
+  * Example Input: New question form: "Who's a good boy?"  
+  * Example Output: Question added to top of list on main page  
+
   **The user can click on a question to go to the question's own page.**  
-    * Example Input: *question-clicky*
-    * Example Output: "Who's a good boy?" Content: "Do you know?" followed by list of answers  
+  * Example Input: *question-clicky*
+  * Example Output: "Who's a good boy?" Content: "Do you know?" followed by list of answers  
+
   **The user can update a question to change its content.**  
-    * Example Input: *update-clicky*
-    * Example Output: new content  
+  * Example Input: *update-clicky*
+  * Example Output: new content  
+
   **The user can answer a question.**  
-    * Example Input: "I be da goodest boy." Author: "Frankie"
-    * Example Output: Answer added to bottom of list of answers on question's page.  
+  * Example Input: "I be da goodest boy." Author: "Frankie"
+  * Example Output: Answer added to bottom of list of answers on question's page.  
 
-**3.  Integration**  
+### **3.  Integration**  
 
-  **Routes**  
-    * Index ->
-    * Question -> includes individual question including question content _a la_ Yahoo Answers, list of answers at bottom underneath form to add a new answer.  
+> **Routes**  
+  * Index ->
+  * Question -> includes individual question including question content _a la_ Yahoo Answers, list of answers at bottom underneath form to add a new answer.  
 
-  **Templates**  
-    * Index - includes list of all questions
-    * Question - includes question-detail, new-answer, answer-tile
+> **Templates**  
+  * Index - includes list of all questions
+  * Question - includes question-detail, new-answer, answer-tile
 
-  **Components**  
-    * Nav-bar
-    * Side-bar? (contains ask-question form, maybe stick in app so appears on all pages)
-    * Question-tile (just author and title for index)
-    * Question-detail (full question for question route)
-    * New-question (form)
-    * New-answer (form)
-    * Answer-tile (all details)
-    * Update-question (probably modal)
+> **Components**  
+  * Nav-bar
+  * Side-bar? (contains ask-question form, maybe stick in app so appears on all pages)
+  * Question-tile (just author and title for index)
+  * Question-detail (full question for question route)
+  * New-question (form)
+  * New-answer (form)
+  * Answer-tile (all details)
+  * Update-question (probably modal)
 
-**4.  UX/UI**  
+### **4.  UX/UI**  
   * Uses SASS & Bootstrap
 
-**5.  Polish**  
+### **5.  Polish**  
   * See if refactoring is needed
   * Delete unused code
   * Revisit README
@@ -75,6 +80,7 @@ You will need the following things properly installed on your computer.
 * `ember install ember-bootstrap`
 * `ember install ember-cli-sass`
 * `ember g ember-bootstrap`
+* `ember install emberfire`
 
 ## Running / Development
 
