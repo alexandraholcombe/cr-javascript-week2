@@ -1,35 +1,31 @@
 {{#bs-button type="primary" icon="glyphicon glyphicon-pencil" onClick=(action 'questionFormShow')}}Ask a Question{{/bs-button}}
 {{#if addNewQuestion}}
-<!-- {{#bs-modal as |modal|}}
-{{#modal.header}} -->
-<!-- <h3 class="modal-title">Ask a question</h3><i class="glyphicon glyphicon-pencil"></i> -->
-<!-- {{/modal.header}}
-{{#modal.body}} -->
+{{#bs-modal as |modal|}}
+{{#modal.header}}
+<h3 class="modal-title">Ask a question</h3><i class="glyphicon glyphicon-pencil"></i>
+{{/modal.header}}
+{{#modal.body}}
 <form>
   <div class="form-group">
     <label for="question">Title</label>
-    {{input type="text" val=question id="question"}}
-    <!-- placeholder="Why do dogs bark at the UPS truck?" -->
+    {{input class="form-control" value=question id="question" placeholder="Why do dogs bark at the UPS truck?" required=true}}
   </div>
   <div class="form-group">
     <label for="author">Your Name</label>
-    {{input type="text" val=author id="author"}}
-     <!-- placeholder="Dog Person" -->
+    {{input class="form-control" value=author id="author" placeholder="Dog Person" required=true}}
   </div>
   <div class="form-group">
     <label for="content">Details</label>
-    {{input type="text" val=content id="content"}}
-    <!-- placeholder="Explain your question." -->
+    {{input class="form-control" value=content id="content" placeholder="Explain your question."}}
   </div>
   <div class="form-group">
     <label for="notes">Notes</label>
-    {{input type="text" val=notes id="notes"}}
-     <!-- placeholder="Add additional notes here" -->
+    {{input class="form-control" value=notes id="notes" placeholder="Add additional notes here"}}
   </div>
-<button {{action 'saveQuestion'}} name="button">Ask a Question</button>
-  <!-- {{#bs-button  type="primary" onClick=(action 'saveQuestion')}} Ask a Question{{/bs-button}} -->
+
+  {{#bs-button  type="primary" onClick=(action 'saveQuestion')}} Ask a Question{{/bs-button}}
   <!-- <button type="submit" class="primary" name="button">Ask a Question</button> -->
 </form>
-<!-- {{/modal.body}}
-{{/bs-modal}} -->
+{{/modal.body}}
+{{/bs-modal}}
 {{/if}}
