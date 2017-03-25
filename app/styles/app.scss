@@ -14,6 +14,7 @@ $bodyFont: "Open Sans", "Arial", sans-serif;
 
 body {
   background-color: $navy;
+  background-image: url(/assets/bgtile.png);
   font-family: $bodyFont;
   font-size: 22px;
 }
@@ -22,6 +23,8 @@ body {
 .container {
   background-color: $notWhite;
   max-width: 970px;
+  padding-bottom: 20px;
+  box-shadow: 10px 10px 10px rgba(0,0,0, 0.3);
 }
 
 /* HEADER*/
@@ -92,7 +95,7 @@ button, .btn, .btn-primary, a {
   padding: 20px 30px;
   padding-top: 15px;
   margin: 20px;
-  border: 5px solid $medGreen;
+  border: 5px solid $navy;
   display: flex;
   align-items: center;
   .icon-container {
