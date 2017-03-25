@@ -4,9 +4,6 @@
 
 #### By _**Alexandra Holcombe**_
 
-## Description
-TBD
-
 ## Planning
 ### **1.  Configuration/Dependencies**  
   * install ember-bootstrap, used in all templates & components
@@ -94,9 +91,9 @@ You will need the following things properly installed on your computer.
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
+### Known Bugs
+* Modal only opens once until you have to refresh the page
+* answer pages are a mess
 
 ## Further Reading / Useful Links
 
