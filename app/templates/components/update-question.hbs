@@ -7,20 +7,20 @@
     {{#modal.body}}
       <form>
         <div class="form-group">
-          <label for="question">Title</label>
-          {{input class="form-control" value=question id="question" placeholder=model.question}}
+          <label for="update-question">Title</label>
+          {{input class="form-control" value=question id="update-question" placeholder=model.question}}
         </div>
         <div class="form-group">
-          <label for="author">Your Name</label>
-          {{input class="form-control" value=author id="author" placeholder=model.author}}
+          <label for="update-author">Your Name</label>
+          {{input class="form-control" value=author id="update-author" placeholder=model.author}}
         </div>
         <div class="form-group">
-          <label for="content">Details</label>
-          {{input class="form-control" value=content id="content" placeholder=model.content}}
+          <label for="update-content">Details</label>
+          {{input class="form-control" value=content id="update-content" placeholder=model.content}}
         </div>
         <div class="form-group">
-          <label for="notes">Notes</label>
-          {{input class="form-control" value=notes id="notes" placeholder=model.notes}}
+          <label for="update-notes">Notes</label>
+          {{input class="form-control" value=notes id="update-notes" placeholder=model.notes}}
         </div>
 
         {{#bs-button  type="primary" onClick=(action 'updateQuestion' model)}}Save Question{{/bs-button}}
